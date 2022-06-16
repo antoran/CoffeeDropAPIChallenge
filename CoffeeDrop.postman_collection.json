@@ -1,8 +1,7 @@
 {
 	"info": {
+		"_postman_id": "815ceb2b-df18-4a47-ab8a-69d9edf9ff53",
 		"name": "CoffeeDrop",
-		"_postman_id": "df15e329-169f-df36-623d-78cd2cdc1350",
-		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -11,9 +10,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {},
 				"url": {
-					"raw": ""
+					"raw": "http://coffee-drop.test/api/v1/locations/nearest",
+					"protocol": "http",
+					"host": [
+						"coffee-drop",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"locations",
+						"nearest"
+					]
 				},
 				"description": "Returns the address and opening times of the nearest CoffeeDrop location"
 			},
@@ -34,9 +43,18 @@
 					"raw": "{\n      \"postcode\": \"CV313PP\",\n      \"opening_times\": {\"monday\" : \"09:00\", \"tuesday\" : \"09:00\", \"saturday\" : \"08:30\"},\n      \"closing_times\": {\"monday\" : \"19:00\", \"tuesday\" : \"19:00\", \"saturday\" : \"18:30\"}\n}\n\n"
 				},
 				"url": {
-					"raw": ""
-				},
-				"description": ""
+					"raw": "http://coffee-drop.test/api/v1/locations",
+					"protocol": "http",
+					"host": [
+						"coffee-drop",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"locations"
+					]
+				}
 			},
 			"response": []
 		},
@@ -55,9 +73,18 @@
 					"raw": "{\n      \"Ristretto\": 10,\n      \"Espresso\": 100,\n      \"Lungo\":30\n}\n\n"
 				},
 				"url": {
-					"raw": ""
-				},
-				"description": ""
+					"raw": "http://coffee-drop.test/api/v1/cashback",
+					"protocol": "http",
+					"host": [
+						"coffee-drop",
+						"test"
+					],
+					"path": [
+						"api",
+						"v1",
+						"cashback"
+					]
+				}
 			},
 			"response": []
 		}
